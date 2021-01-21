@@ -1,0 +1,654 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="ERP Kementrian Kesehatan Penanggulangan Penyebaran Covid Menggunakan Framework Togaf">
+      
+      
+        <link rel="canonical" href="https://brothernord.github.io/IAK-kelompok-4/tahap-1/">
+      
+      
+        <meta name="author" content="Kelompok 4">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-4.2.0">
+    
+    
+      
+        <title>Tahap 1 - IAK Kelompok 4</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.750b69bd.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.224b79ff.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#546e7a">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "None", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue-grey" data-md-color-accent="blue-grey">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#tahap-1" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://brothernord.github.io/IAK-kelompok-4/" title="IAK Kelompok 4" class="md-header-nav__button md-logo">
+          
+            <img src="../images/logo.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              IAK Kelompok 4
+            </span>
+            <span class="md-header-nav__topic">
+              Tahap 1
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/brothernord/IAK-kelompok-4" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    brothernord/IAK-kelompok-4
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href=".." title="Kelompok 4" class="md-tabs__link md-tabs__link--active">
+        Kelompok 4
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://brothernord.github.io/IAK-kelompok-4/" title="IAK Kelompok 4" class="md-nav__button md-logo">
+      
+        <img src="../images/logo.png" width="48" height="48">
+      
+    </a>
+    IAK Kelompok 4
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/brothernord/IAK-kelompok-4" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    brothernord/IAK-kelompok-4
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Kelompok 4" class="md-nav__link">
+      Kelompok 4
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Tahap 1
+      </label>
+    
+    <a href="./" title="Tahap 1" class="md-nav__link md-nav__link--active">
+      Tahap 1
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-open-group-framework-architecture" title="The Open Group Framework Architecture" class="md-nav__link">
+    The Open Group Framework Architecture
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visi-misi" title="Visi Misi" class="md-nav__link">
+    Visi Misi
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#strategy-map" title="Strategy Map" class="md-nav__link">
+    Strategy Map
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#balance-score-card" title="Balance Score Card" class="md-nav__link">
+    Balance Score Card
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#perspektif-pegawai-dan-masyarakat" title="Perspektif Pegawai dan Masyarakat" class="md-nav__link">
+    Perspektif Pegawai dan Masyarakat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#perspektif-bisnis-internal" title="Perspektif Bisnis Internal" class="md-nav__link">
+    Perspektif Bisnis Internal
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#porters-value-chain" title="Porter's Value Chain" class="md-nav__link">
+    Porter's Value Chain
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../tahap-2/" title="Tahap 2" class="md-nav__link">
+      Tahap 2
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../tahap-3/" title="Tahap 3" class="md-nav__link">
+      Tahap 3
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../tahap-4/" title="Tahap 4" class="md-nav__link">
+      Tahap 4
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-open-group-framework-architecture" title="The Open Group Framework Architecture" class="md-nav__link">
+    The Open Group Framework Architecture
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visi-misi" title="Visi Misi" class="md-nav__link">
+    Visi Misi
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#strategy-map" title="Strategy Map" class="md-nav__link">
+    Strategy Map
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#balance-score-card" title="Balance Score Card" class="md-nav__link">
+    Balance Score Card
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#perspektif-pegawai-dan-masyarakat" title="Perspektif Pegawai dan Masyarakat" class="md-nav__link">
+    Perspektif Pegawai dan Masyarakat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#perspektif-bisnis-internal" title="Perspektif Bisnis Internal" class="md-nav__link">
+    Perspektif Bisnis Internal
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#porters-value-chain" title="Porter's Value Chain" class="md-nav__link">
+    Porter's Value Chain
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="tahap-1">Tahap 1<a class="headerlink" href="#tahap-1" title="Permanent link">&para;</a></h1>
+<h2 id="the-open-group-framework-architecture"><strong>The Open Group Framework Architecture</strong><a class="headerlink" href="#the-open-group-framework-architecture" title="Permanent link">&para;</a></h2>
+<p>Kerangka kerja <em>The Open Group Framework Architecture</em> (TOGAF) memberikan metode dan alat untuk membantu dalam penerimaan, produksi, penggunaan, dan pemeliharaan arsitektur enterprise. Hal ini didasarkan pada model proses berulang (<em>iterative process</em>) didukung oleh praktik-praktik terbaik dan satu set dapat digunakan kembali aset arsitektur yang sudah ada. Versi pertama TOGAF dirilis pertama kali pada tahun 1995 berdasarkan <em>Technical Architecture Framework for Information Management</em> (TAFIM), yang dikembangkan oleh <em>The Open Group</em> dan digunakan oleh Departemen Pertahanan Amerika Serikat. Kini pun TOGAF juga sudah dapat digunakan oleh organisasi dari seluruh bidang. <em>TOGAF Enterprise Architecture</em> digunakan untuk pengembangan perancangan strategis sistem informasi dikarenakan ruang lingkupnya yang luas, lengkap, mudah dimengerti dan memanfaatkan konsep dan terminologi ISO/IEC 42010: 2007. TOGAF terdiri dari <em>Architecture Development Method (ADM), Foundation Architecture (Enterprise Continuum),</em> dan <em>Resource Base</em>.</p>
+<p><strong>Architecture Development Method (ADM)</strong></p>
+<p>Setiap fase ADM tersebut memiliki input dan ouput untuk mendapatkan kebutuhan bisnis TI dalam organisasi. ADM menyediakan proses lifecycle dari enterprise architecture yang teruji dan dapat diulang untuk mengembangkan sebuah arsitektur seperti membangun kerangka kerja arsitektur, mengembangkan konten arsitektur, memproses transisi, dan mengatur pelaksanaan arsitektur. Kumpulan elemen dari EA dideskripsikan ke dalam dokumen ADM untuk mencapai kebutuhaan bisnis TI dalam organisasi. Alasan menggunakan TOGAF ADM adalah sebagai berikut:</p>
+<ol>
+<li>TOGAF ADM memiliki tahapan <em>requirement management</em> yang memastikan perubahan persyaratan terpenuhi melalui proses tata kelola yang sesuai dan dipertimbangkan dalam semua tahapan lainnya. </li>
+<li>TOGAF dapat diadaptasi dengan metodologi yang diterapkan oleh suatu perusahaan atau praktisi yang menggunakan framework</li>
+</ol>
+<h2 id="visi-misi">Visi Misi<a class="headerlink" href="#visi-misi" title="Permanent link">&para;</a></h2>
+<p><strong>VISI</strong></p>
+<p>Visi misi Kementerian Kesehatan mengikuti visi misi Presiden Republik Indonesia yaitu Terwujudnya Indonesia yang Berdaulat, Mandiri dan Berkepribadian Berlandaskan Gotong-royong. </p>
+<p><strong>MISI</strong></p>
+<ul>
+<li>Terwujudnya keamanan nasional yang mampu menjaga kedaulatan     wilayah, menopang kemandirian ekonomi dengan mengamankan sumber daya     maritim dan mencerminkan kepribadian Indonesia sebagai negara kepulauan.</li>
+<li>Mewujudkan masyarakat maju, berkesinambungan dan demokratis     berlandaskan negara hukum.</li>
+<li>Mewujudkan politik luar negeri bebas dan aktif serta memperkuat     jati diri sebagai negara maritim.</li>
+<li>Mewujudkan kualitas hidup manusia lndonesia yang tinggi, maju dan     sejahtera.</li>
+<li>Mewujudkan bangsa yang berdaya saing.</li>
+<li>Mewujudkan Indonesia menjadi negara maritim yang mandiri, maju,     kuat dan berbasiskan kepentingan nasional, serta</li>
+<li>Mewujudkan masyarakat yang berkepribadian dalam kebudayaan.</li>
+</ul>
+<h2 id="strategy-map">Strategy Map<a class="headerlink" href="#strategy-map" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="../assets/images/strategy%20map%20new.png" /></p>
+<h2 id="balance-score-card">Balance Score Card<a class="headerlink" href="#balance-score-card" title="Permanent link">&para;</a></h2>
+<h3 id="perspektif-pegawai-dan-masyarakat">Perspektif Pegawai dan Masyarakat<a class="headerlink" href="#perspektif-pegawai-dan-masyarakat" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../assets/images/BSC%20masyarakat%20baru.png" /></p>
+<h3 id="perspektif-bisnis-internal">Perspektif Bisnis Internal<a class="headerlink" href="#perspektif-bisnis-internal" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../assets/images/BCS%20bisnis%20internal%20baru.png" /></p>
+<h2 id="porters-value-chain">Porter's Value Chain<a class="headerlink" href="#porters-value-chain" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="../assets/images/porter%20value%20chain.png" /></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href=".." title="Kelompok 4" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Kelompok 4
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../tahap-2/" title="Tahap 2" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Tahap 2
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2021 Kelompok 4
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="http://struct.cc" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/squidfunk" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/squidfunk" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://linkedin.com/in/squidfunk" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.8c0d971c.js"></script>
+      
+      <script>app.initialize({version:"1.1.2",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>
